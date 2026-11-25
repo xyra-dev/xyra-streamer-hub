@@ -1,6 +1,6 @@
 # Xyra Streamer Hub — Website (GitHub Pages)
 
-Catatan proyek website, dibuat 2026-11-26. Status: **build pertama, belum di-deploy**.
+Catatan proyek website, dibuat 2026-11-26. Status: **LIVE** di https://xyra-dev.github.io/xyra-streamer-hub/ (rilis pertama).
 Proyek terkait: app Android `C:\Dev_Ex\Apps\Android\Xyra - Streamer Hub\PROGRESS.md` (v1.0.2).
 Situs lain: `C:\Dev_Ex\Projek\gift-db` (pola statis yang ditiru).
 
@@ -71,9 +71,9 @@ docs/
 
 ## 7. TODO / sisa kerjaan
 
-- [ ] Deploy: `git init` → commit → `gh repo create --push` → aktifkan Pages `/docs`.
-- [ ] Release `v1.0.2` + upload `XyraStreamerHub-1.0.2.apk`.
-- [ ] Verifikasi live (HTTP + headless DOM check).
+- [x] Deploy: repo + push + Pages `/docs` aktif (build `1b4c694` "built").
+- [x] Release `v1.0.2` + upload `XyraStreamerHub-1.0.2.apk` (asset 200, 29.601.311 B).
+- [x] Verifikasi live: 6 halaman HTTP 200; DOM check download (v1.0.2 + SHA + tombol) & cara-pakai.
 - [ ] Isi `docs/data/video.json` begitu video YouTube jadi (cukup 1 file, tanpa ubah HTML).
 - [ ] (Opsional) custom domain kalau nanti diminta.
 
@@ -81,4 +81,7 @@ docs/
 
 - **2026-11-26** — Proyek dimulai. Aset disiapkan (logo di-resize + favicon; screenshot
   app sempat disiapkan lalu **dibuang** dari scope: keputusan final tanpa gambar).
-  SHA-256 & metadata APK terkumpul. File situs ditulis, menunggu deploy.
+  SHA-256 & metadata APK terkumpul. File situs ditulis.
+- **2026-11-26** — Deploy pertama: repo `xyra-dev/xyra-streamer-hub` publik, commit
+  `1b4c694`, Pages "built". Release `v1.0.2` + APK ter-upload dan bisa diunduh.
+  Uji lokal & live lolos semua (lihat AGENTS.md untuk konvensi; README.md untuk update).
