@@ -2,11 +2,11 @@
    Sistem Desain Glassmorphism & Electric Purple Glow */
 
 :root {
-  --bg: #07050b;
-  --bg-soft: #0e0917;
-  --card: #130c22;
-  --card-hover: #1a102e;
-  --line: #271c42;
+  --bg: #050508;
+  --bg-soft: #08080c;
+  --card: #000000;
+  --card-hover: #0a0a0f;
+  --line: #221c38;
   --line-bright: rgba(139, 92, 246, 0.35);
   --text: #f3f0fa;
   --muted: #9d94b8;
@@ -352,11 +352,11 @@ h3 { font-size: 1.1rem; }
   font-size: 0.84rem;
   font-weight: 600;
   color: var(--text);
-  background: rgba(19, 12, 34, 0.75);
+  background: #000000;
   border: 1px solid var(--line);
   padding: 6px 14px;
   border-radius: 999px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .hero-actions {
@@ -382,18 +382,18 @@ h3 { font-size: 1.1rem; }
 }
 
 .card {
-  background: linear-gradient(180deg, rgba(19, 12, 34, 0.75) 0%, rgba(14, 9, 23, 0.9) 100%);
-  border: 1px solid rgba(139, 92, 246, 0.18);
+  background: #000000;
+  border: 1px solid rgba(139, 92, 246, 0.2);
   border-radius: var(--radius);
   padding: 24px;
-  backdrop-filter: blur(10px);
-  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), border-color 0.25s, box-shadow 0.25s;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), border-color 0.25s, box-shadow 0.25s, background 0.25s;
 }
 
 .card:hover {
   transform: translateY(-4px);
+  background: #08080c;
   border-color: rgba(139, 92, 246, 0.45);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(139, 92, 246, 0.15);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(139, 92, 246, 0.15);
 }
 
 .card .icon {
@@ -420,14 +420,14 @@ h3 { font-size: 1.1rem; }
 .cta-strip {
   border: 1px solid rgba(139, 92, 246, 0.3);
   border-radius: var(--radius-lg);
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.18), rgba(124, 58, 237, 0.08));
+  background: #000000;
   padding: 36px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
   flex-wrap: wrap;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35), 0 0 24px rgba(139, 92, 246, 0.12);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 20px rgba(139, 92, 246, 0.1);
 }
 
 .cta-strip h2 { margin-bottom: 6px; }
@@ -450,17 +450,18 @@ h3 { font-size: 1.1rem; }
   display: flex;
   gap: 18px;
   align-items: flex-start;
-  background: linear-gradient(180deg, rgba(19, 12, 34, 0.7) 0%, rgba(14, 9, 23, 0.85) 100%);
-  border: 1px solid rgba(139, 92, 246, 0.18);
+  background: #000000;
+  border: 1px solid rgba(139, 92, 246, 0.2);
   border-radius: 16px;
   padding: 18px 22px;
-  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s, background 0.2s;
 }
 
 .steps li:hover {
+  background: #08080c;
   border-color: rgba(139, 92, 246, 0.4);
   transform: translateX(4px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 .steps li::before {
@@ -574,7 +575,7 @@ h3 { font-size: 1.1rem; }
   flex-wrap: wrap;
   padding: 16px 22px;
   border-top: 1px solid var(--line);
-  background: rgba(14, 9, 23, 0.6);
+  background: #000000;
 }
 
 .video-meta .title { font-weight: 700; font-size: 1.05rem; }
@@ -582,11 +583,11 @@ h3 { font-size: 1.1rem; }
 /* ---------- download ---------- */
 
 .download-card {
-  background: linear-gradient(180deg, rgba(19, 12, 34, 0.85) 0%, rgba(14, 9, 23, 0.95) 100%);
+  background: #000000;
   border: 1px solid rgba(139, 92, 246, 0.25);
   border-radius: var(--radius-lg);
   padding: 34px;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), 0 0 24px rgba(139, 92, 246, 0.12);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(139, 92, 246, 0.1);
 }
 
 .download-head {
@@ -618,7 +619,7 @@ h3 { font-size: 1.1rem; }
 }
 
 .spec {
-  background: var(--bg-soft);
+  background: #08080c;
   border: 1px solid var(--line);
   border-radius: 14px;
   padding: 14px 16px;
@@ -641,7 +642,7 @@ h3 { font-size: 1.1rem; }
 .spec dd { margin: 0; font-weight: 700; font-size: 0.98rem; color: var(--text); }
 
 .sha-box {
-  background: var(--bg-soft);
+  background: #08080c;
   border: 1px solid var(--line);
   border-radius: 14px;
   padding: 14px 16px;
@@ -714,15 +715,16 @@ h3 { font-size: 1.1rem; }
 /* ---------- changelog ---------- */
 
 .release {
-  background: linear-gradient(180deg, rgba(19, 12, 34, 0.75) 0%, rgba(14, 9, 23, 0.9) 100%);
-  border: 1px solid rgba(139, 92, 246, 0.18);
+  background: #000000;
+  border: 1px solid rgba(139, 92, 246, 0.2);
   border-radius: var(--radius);
   padding: 24px;
   margin-bottom: 18px;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
 }
 
 .release:hover {
+  background: #08080c;
   border-color: rgba(139, 92, 246, 0.35);
 }
 
@@ -769,7 +771,7 @@ h3 { font-size: 1.1rem; }
 }
 
 .faq details {
-  background: linear-gradient(180deg, rgba(19, 12, 34, 0.75) 0%, rgba(14, 9, 23, 0.85) 100%);
+  background: #000000;
   border-bottom: 1px solid var(--line);
   transition: background 0.15s;
 }
@@ -777,7 +779,7 @@ h3 { font-size: 1.1rem; }
 .faq details:last-child { border-bottom: 0; }
 
 .faq details[open] {
-  background: rgba(26, 16, 46, 0.85);
+  background: #08080c;
 }
 
 .faq summary {
