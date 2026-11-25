@@ -53,11 +53,68 @@
     return REPO_RELEASES + '/latest/download/' + encodeURIComponent(fileName || '');
   }
 
+  function showToast(message) {
+    var toast = el('xyra-toast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'xyra-toast';
+      toast.className = 'toast-pill';
+      toast.setAttribute('role', 'status');
+      toast.setAttribute('aria-live', 'polite');
+      document.body.appendChild(toast);
+    }
+    toast.textContent = message;
+    toast.classList.add('is-visible');
+    clearTimeout(showToast.timer);
+    showToast.timer = setTimeout(function () {
+      toast.classList.remove('is-visible');
+    }, 1800);
+  }
+
+  function copyToClipboard(text, successMsg) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () {
+        showToast(successMsg || 'Tersalin!');
+      }).catch(function () {
+        fallbackCopy(text, successMsg);
+      });
+    } else {
+      fallbackCopy(text, successMsg);
+    }
+  }
+
+  function fallbackCopy(text, successMsg) {
+    var area = document.createElement('textarea');
+    area.value = text;
+    area.setAttribute('readonly', '');
+    area.style.position = 'fixed';
+    area.style.opacity = '0';
+    document.body.appendChild(area);
+    area.select();
+    try {
+      document.execCommand('copy');
+      showToast(successMsg || 'Tersalin!');
+    } catch (e) {
+      showToast('Gagal salin: ' + text);
+    }
+    area.parentNode.removeChild(area);
+  }
+
   /* ---------- halaman download ---------- */
 
   function initDownload() {
     var btn = el('dl-btn');
     var oldList = el('dl-old');
+    var copyShaBtn = el('copy-sha-btn');
+    var shaCode = el('dl-sha');
+
+    if (copyShaBtn) {
+      copyShaBtn.addEventListener('click', function () {
+        var text = (shaCode && shaCode.textContent) || '';
+        if (!text) return;
+        copyToClipboard(text, 'SHA-256 berhasil disalin!');
+      });
+    }
 
     fetchJSON(
       ROOT + 'data/releases.json',
