@@ -89,3 +89,7 @@ docs/
   - Website: link "Katalog Gift" ditambahkan di navbar dan footer semua 5 halaman. Step 5 Cara Pakai & FAQ dilengkapi panduan katalog gift.
   - In-Game Roblox (`ServerStorage.Gz_Streamer`): `GiftCatalog`, `GiftPicker` (hint header "More"), `_README`, dan `_ROADMAP` diperbarui dengan referensi `xyra-dev.github.io/gift-db`. Place disimpan ke cloud (v3913).
   - Katalog Gift (`gift-db`): tampilan diseragamkan total ke tema Xyra Studio (header nav bolak-balik, tema gelap ungu, logo Xyra, footer resmi).
+- **2026-11-26** — Redesign UI Modern & Background Pure Black:
+  - Redesign visual: sistem obsidian dark `#050508`, mobile navbar smooth scroll pills, aura pendar logo hero, highlights bar (`Tanpa PC`, `WebSocket Realtime`, `±30 MB Ringan`, `Bebas Iklan`), timeline step cards `01`–`05`, dan 1-click copy SHA-256.
+  - Sesuai arahan user: seluruh background kartu (`.card`, `.steps li`, `.download-card`, `.release`, `.faq details`, `.controls-card`) diubah menjadi pure hitam pekat (`#000000`) tanpa semu ungu agar lebih tajam dan bersih.
+  - Cache Pages di-bump ke `style.css?v=3` (hub) dan `style.css?v=8` (gift-db). Status Pages: `built`.
