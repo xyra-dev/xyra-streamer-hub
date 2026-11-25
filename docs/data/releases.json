@@ -1,0 +1,38 @@
+{
+  "latest": {
+    "version": "1.0.2",
+    "versionCode": 3,
+    "date": "25 Nov 2026",
+    "file": "XyraStreamerHub-1.0.2.apk",
+    "size": 29601311,
+    "sizeText": "29,6 MB",
+    "sha256": "CBB3D9030E736081DFE2882FFC5403485CEA36E2C2CD3348083D5904D363311C",
+    "minAndroid": "Android 10 (API 29)",
+    "arch": "arm64-v8a",
+    "notes": [
+      "Perbaikan alur koneksi & kompatibilitas",
+      "Build minify — ukuran APK lebih kecil"
+    ]
+  },
+  "history": [
+    {
+      "version": "1.0.1",
+      "versionCode": 2,
+      "date": "25 Nov 2026",
+      "notes": [
+        "Build minify pertama — ukuran turun dari 45,9 MB ke 29,6 MB"
+      ]
+    },
+    {
+      "version": "1.0.0",
+      "versionCode": 1,
+      "date": "25 Nov 2026",
+      "notes": [
+        "Rilis awal",
+        "Build non-minify (45,9 MB)"
+      ]
+    }
+  ],
+  "repo": "xyra-dev/xyra-streamer-hub",
+  "releasesUrl": "https://github.com/xyra-dev/xyra-streamer-hub/releases"
+}

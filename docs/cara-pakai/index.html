@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cara Pakai — Xyra Streamer Hub</title>
+  <meta name="description" content="Panduan lengkap pakai Xyra Streamer Hub dalam video: daftar token, install APK, Start saat live, sampai Connect di game." />
+  <link rel="icon" type="image/png" href="../assets/favicon-64.png" />
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
+  <link rel="stylesheet" href="../assets/style.css?v=1" />
+</head>
+<body data-page="cara-pakai" data-root="../">
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="../">
+        <span class="logo-tile"><img src="../assets/logo.png?v=1" alt="Logo Xyra" width="32" height="32" /></span>
+        <span>Xyra Streamer Hub</span>
+      </a>
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <a href="../">Home</a>
+        <a href="../cara-pakai/" aria-current="page">Cara Pakai</a>
+        <a href="../download/">Download</a>
+        <a href="../faq/">FAQ</a>
+        <a href="../changelog/">Changelog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <span class="eyebrow">Cara Pakai</span>
+        <h1>Tonton videonya</h1>
+        <p>
+          Semua langkah dijelaskan lengkap di video — dari daftar token sampai gift masuk di game.
+          Kalau ada update, video di halaman ini yang diperbarui.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container">
+        <div class="video-shell">
+          <div class="video-frame" id="video-root">
+            <div class="video-empty">
+              <span class="big" aria-hidden="true">🎬</span>
+              <b>Memuat video…</b>
+            </div>
+          </div>
+          <div class="video-meta">
+            <span class="title" id="video-title">Cara pakai Xyra Streamer Hub</span>
+            <a class="btn btn-ghost" id="video-channel" href="https://www.youtube.com" rel="noopener" hidden>Kunjungi channel</a>
+          </div>
+        </div>
+
+        <p class="boot-error" id="boot-error" hidden></p>
+
+        <noscript>
+          <p class="note">
+            JavaScript mati, jadi video nggak bisa dimuat di sini.
+            Kamu tetap bisa ikuti ringkasan langkah di bawah, atau buka video langsung di YouTube.
+          </p>
+        </noscript>
+
+        <script>
+          window.__xyraBoot = false;
+          setTimeout(function () {
+            if (window.__xyraBoot) return;
+            var box = document.getElementById('boot-error');
+            if (box) {
+              box.hidden = false;
+              box.textContent = 'Halaman lambat memuat. Coba refresh, atau buka video langsung di YouTube.';
+            }
+          }, 5000);
+        </script>
+        <script defer src="../assets/app.js?v=1"></script>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <span class="eyebrow">Ringkasan</span>
+        <h2>Urutan lengkapnya begini</h2>
+        <ol class="steps" style="margin-top: 22px;">
+          <li><div><b>Daftar &amp; ambil token</b><span>Daftar sebagai streamer lewat Discord. Setelah di-approve, minta token dengan perintah <code>/token</code> — token tampil sekali, jangan dibagikan.</span></div></li>
+          <li><div><b>Install APK</b><span>Download dari halaman <a href="../download/">Download</a>. Izinkan "Install unknown apps" untuk browser-mu, lalu saat Play Protect muncul pilih <b>Scan app</b> → <b>Install</b>.</span></div></li>
+          <li><div><b>Atur izin app</b><span>Izinkan notifikasi, lalu di pengaturan battery pilih <b>No restrictions</b> — penting supaya app nggak dimatikan saat di background (terutama MIUI/HyperOS).</span></div></li>
+          <li><div><b>Tempel token, Start saat live</b><span>Tempel token sekali, akun TikTok-mu terkunci di app. Saat kamu live di TikTok, tekan <b>Start</b> dan tunggu status live.</span></div></li>
+          <li><div><b>Connect di game</b><span>Masuk ke game Roblox, buka panel streamer, tekan <b>Connect</b>. Gift yang masuk langsung tampil. Selesai live? Tekan <b>Stop</b> di app.</span></div></li>
+        </ol>
+
+        <div class="note" style="margin-top: 18px;">
+          <b>Urutan penting:</b> Start dulu di app, baru Connect di game.
+          Kalau dibalik, game akan bilang kamu belum live.
+          Error lain? Cek halaman <a href="../faq/">FAQ</a>.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="../">Home</a>
+        <a href="../cara-pakai/">Cara Pakai</a>
+        <a href="../download/">Download</a>
+        <a href="../faq/">FAQ</a>
+        <a href="../changelog/">Changelog</a>
+        <a href="https://github.com/xyra-dev/xyra-streamer-hub" rel="noopener">GitHub</a>
+      </div>
+      <div>© 2026 Xyra Studio — Xyra Streamer Hub</div>
+      <div class="footer-disclaimer">
+        Proyek independen oleh Xyra Studio. Bukan produk resmi, dan tidak berafiliasi dengan TikTok maupun Roblox.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Changelog — Xyra Streamer Hub</title>
+  <meta name="description" content="Riwayat versi Xyra Streamer Hub untuk Android." />
+  <link rel="icon" type="image/png" href="../assets/favicon-64.png" />
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
+  <link rel="stylesheet" href="../assets/style.css?v=1" />
+</head>
+<body data-page="changelog" data-root="../">
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="../">
+        <span class="logo-tile"><img src="../assets/logo.png?v=1" alt="Logo Xyra" width="32" height="32" /></span>
+        <span>Xyra Streamer Hub</span>
+      </a>
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <a href="../">Home</a>
+        <a href="../cara-pakai/">Cara Pakai</a>
+        <a href="../download/">Download</a>
+        <a href="../faq/">FAQ</a>
+        <a href="../changelog/" aria-current="page">Changelog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <span class="eyebrow">Changelog</span>
+        <h1>Riwayat versi</h1>
+        <p>Daftar versi dan perubahannya. Data diambil dari <code>data/releases.json</code>.</p>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container">
+        <!-- Fallback statis: tampil kalau JS gagal/mati; diganti JS saat data termuat -->
+        <div id="changelog-static">
+          <article class="release is-latest">
+            <div class="release-head">
+              <h3>v1.0.2</h3>
+              <span class="tag-latest">Terbaru</span>
+              <span class="release-date">25 Nov 2026</span>
+            </div>
+            <ul>
+              <li>Perbaikan alur koneksi &amp; kompatibilitas</li>
+              <li>Build minify — ukuran APK lebih kecil</li>
+            </ul>
+          </article>
+          <article class="release">
+            <div class="release-head">
+              <h3>v1.0.1</h3>
+              <span class="release-date">25 Nov 2026</span>
+            </div>
+            <ul>
+              <li>Build minify pertama — ukuran turun dari 45,9 MB ke 29,6 MB</li>
+            </ul>
+          </article>
+          <article class="release">
+            <div class="release-head">
+              <h3>v1.0.0</h3>
+              <span class="release-date">25 Nov 2026</span>
+            </div>
+            <ul>
+              <li>Rilis awal</li>
+              <li>Build non-minify (45,9 MB)</li>
+            </ul>
+          </article>
+        </div>
+
+        <div id="changelog-list"></div>
+
+        <p class="boot-error" id="boot-error" hidden></p>
+
+        <script>
+          window.__xyraBoot = false;
+          setTimeout(function () {
+            if (window.__xyraBoot) return;
+            var box = document.getElementById('boot-error');
+            if (box) {
+              box.hidden = false;
+              box.textContent = 'Daftar versi lambat dimuat — versi statis di atas tetap tampil.';
+            }
+          }, 5000);
+        </script>
+        <script defer src="../assets/app.js?v=1"></script>
+
+        <p style="margin-top: 26px; font-size: 0.9rem; color: var(--muted);">
+          APK tiap versi bisa diunduh dari
+          <a href="https://github.com/xyra-dev/xyra-streamer-hub/releases" rel="noopener">GitHub Releases</a>.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="../">Home</a>
+        <a href="../cara-pakai/">Cara Pakai</a>
+        <a href="../download/">Download</a>
+        <a href="../faq/">FAQ</a>
+        <a href="../changelog/">Changelog</a>
+        <a href="https://github.com/xyra-dev/xyra-streamer-hub" rel="noopener">GitHub</a>
+      </div>
+      <div>© 2026 Xyra Studio — Xyra Streamer Hub</div>
+      <div class="footer-disclaimer">
+        Proyek independen oleh Xyra Studio. Bukan produk resmi, dan tidak berafiliasi dengan TikTok maupun Roblox.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
