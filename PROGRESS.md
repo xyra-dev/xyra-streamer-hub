@@ -85,3 +85,7 @@ docs/
 - **2026-11-26** — Deploy pertama: repo `xyra-dev/xyra-streamer-hub` publik, commit
   `1b4c694`, Pages "built". Release `v1.0.2` + APK ter-upload dan bisa diunduh.
   Uji lokal & live lolos semua (lihat AGENTS.md untuk konvensi; README.md untuk update).
+- **2026-11-26** — Integrasi Katalog Gift (`gift-db`) & In-Game Roblox:
+  - Website: link "Katalog Gift" ditambahkan di navbar dan footer semua 5 halaman. Step 5 Cara Pakai & FAQ dilengkapi panduan katalog gift.
+  - In-Game Roblox (`ServerStorage.Gz_Streamer`): `GiftCatalog`, `GiftPicker` (hint header "More"), `_README`, dan `_ROADMAP` diperbarui dengan referensi `xyra-dev.github.io/gift-db`. Place disimpan ke cloud (v3913).
+  - Katalog Gift (`gift-db`): tampilan diseragamkan total ke tema Xyra Studio (header nav bolak-balik, tema gelap ungu, logo Xyra, footer resmi).
